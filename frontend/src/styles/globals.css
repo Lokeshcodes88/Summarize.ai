@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: radial-gradient(circle at 40% 30%, #dde6f3 0%, #7b8da9 100%);
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+
+input, button {
+  border-radius: 12px;
+  padding: 1rem;
+  border: none;
+  font-size: 1rem;
+}
+
+.sidebar {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(7px);
+}
+
+.button-primary {
+  background: linear-gradient(90deg, #b7c9e9, #deeaff);
+  color: #22223b;
+  border-radius: 9999px;
+  font-weight: 500;
+  padding: 0.75rem 2rem;
+  box-shadow: 0 2px 10px #dde6f388;
+  transition: background 0.2s;
+}
+.button-primary:hover {
+  background: linear-gradient(90deg, #deeaff, #b7c9e9);
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #5c6d92, #88a6d2 60%);
+  -webkit-background-clip: text;
+  background-clip: text; 
+  -webkit-text-fill-color: transparent;
+}
